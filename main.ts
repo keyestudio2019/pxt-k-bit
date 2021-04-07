@@ -33,7 +33,16 @@ enum MotorDir {
     Forward = 0,
     Back = 1
 }
-
+enum IR_state {
+        state1=0x10,
+        state2=0x11,
+        state3=0x20,
+        state4=0x21
+    }
+interface KV {
+    key: IR_state;
+    action: Action;
+}
 
 //% color="#ff6800" icon="\uf1b9" weight=15
 //% groups="['Motor', 'RGB-led', 'Neo-pixel', 'Sensor', 'Tone']"
